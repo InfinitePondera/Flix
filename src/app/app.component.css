@@ -1,0 +1,30 @@
+.homepage-text-toolbar{
+    margin-left: 8px;
+}
+
+.sidebar-container{
+    display:flex;
+    height: 100%;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 12px; */
+    width: 100%;
+}
+
+.toolbar-teste{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.toolbar-button-style{
+    margin-top: 30px;
+}
