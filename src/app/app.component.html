@@ -30,10 +30,17 @@
 
       <h1 class="adm-selection-text">Seleção da administração</h1>
       <div class="carousel-container">
-        <ngb-carousel *ngIf="images">
+        <ngb-carousel *ngIf="imagePath">
           <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
-              <img [src]="images[0]" alt="Random first slide">
+              <img class="movie-image-resize" [src]="imagePath[0]" alt="Random first slide">
+            </div>
+            <div class="carousel-caption">
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+            <div class="picsum-img-wrapper">
+              <img class="movie-image-resize" [src]="imagePath[0]" alt="Random first slide">
             </div>
             <div class="carousel-caption">
               <h3>First slide label</h3>
@@ -42,7 +49,7 @@
           </ng-template>
           <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
-              <img [src]="images[1]" alt="Random second slide">
+              <img class="movie-image-resize" [src]="imagePath[1]" alt="Random second slide">
             </div>
             <div class="carousel-caption">
               <h3>Second slide label</h3>
@@ -51,7 +58,7 @@
           </ng-template>
           <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
-              <img [src]="images[2]" alt="Random third slide">
+              <img class="movie-image-resize" [src]="imagePath[2]" alt="Random third slide">
             </div>
             <div class="carousel-caption">
               <h3>Third slide label</h3>
@@ -63,10 +70,10 @@
 
       <h1 class="adm-selection-text">Mais Filmes</h1>
       <div class="movie-carousel-container">
-        <ngb-carousel *ngIf="images">
+        <ngb-carousel *ngIf="imagePath">
           <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
-              <img [src]="images[0]" alt="Random first slide">
+              <img class="movie-image-resize" [src]="imagePath[0]" alt="Random first slide">
             </div>
             <div class="carousel-caption">
               <h3>First slide label</h3>
@@ -75,7 +82,7 @@
           </ng-template>
           <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
-              <img [src]="images[1]" alt="Random second slide">
+              <img class="movie-image-resize" [src]="imagePath[1]" alt="Random second slide">
             </div>
             <div class="carousel-caption">
               <h3>Second slide label</h3>
@@ -84,7 +91,7 @@
           </ng-template>
           <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
-              <img [src]="images[2]" alt="Random third slide">
+              <img class="movie-image-resize" [src]="imagePath[2]" alt="Random third slide">
             </div>
             <div class="carousel-caption">
               <h3>Third slide label</h3>

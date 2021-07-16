@@ -51,7 +51,7 @@
     display:flex;
     justify-content: center;
     align-items: flex-start;
-    width: 50%;
+    width: 90%;
 }
 .movie-carousel-container{
     display:flex;
@@ -59,10 +59,19 @@
     align-items: flex-start;
     width: 50%;
 }
-.movie-carousel-container.img{
+.carousel-separator{
+    display: flex;
+    flex-direction: row;
+}
+.movie-image-resize{
+    max-width: 370px;
+    max-height: 500px;
+}
+/* .movie-carousel-container.img{
     height: 300px;
     width: 200px;
-}
-/* :host /deep/ .carousel-control-next, .carousel-control-prev{
-
 } */
+:host /deep/ .carousel-item-next, .carousel-item-prev, .carousel-item-active, .carousel-inner{
+    display: flex !important;
+    flex-direction: row !important;
+}
